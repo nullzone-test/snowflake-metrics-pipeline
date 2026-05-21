@@ -1,0 +1,12 @@
+warehouse: ANALYTICS_WH
+database: ANALYTICS_PROD
+schema: PUBLIC
+default_metrics:
+  - daily_active_users
+  - revenue_per_user
+  - session_duration_avg
+  - conversion_rate
+schedule: "0 5 * * *"
+alerts:
+  slack_channel: "#analytics-alerts"
+  threshold_drop_pct: 20

@@ -1,0 +1,7 @@
+warehouse: COMPUTE_WH
+database: ANALYTICS_DEV
+schema: PUBLIC
+default_metrics:
+  - daily_active_users
+  - session_duration_avg
+schedule: "0 6 * * *"
