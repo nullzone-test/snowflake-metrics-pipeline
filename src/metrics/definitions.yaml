@@ -1,0 +1,11 @@
+# Snowflake Analytics Pipeline - Metric Definitions
+metrics:
+  daily_active_users:
+    source: events.page_views
+    aggregation: count_distinct(user_id)
+    window: 1 day
+    
+  revenue_per_user:
+    source: billing.transactions
+    aggregation: sum(amount) / count_distinct(user_id)
+    window: 30 days
