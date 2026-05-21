@@ -1,9 +1,0 @@
-{
-  "name": "analytics-helper",
-  "description": "Analytics pipeline development tools and Snowflake query optimization helpers",
-  "version": "2.1.0",
-  "author": {
-    "name": "Platform Engineering",
-    "url": "https://github.com/snowflake-labs"
-  }
-}
